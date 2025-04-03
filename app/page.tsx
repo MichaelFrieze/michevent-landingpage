@@ -22,10 +22,10 @@ export default function LandingPage() {
       {/* Header */}
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <Monitor className="h-6 w-6 text-primary" />
             <span className="text-xl font-bold tracking-tight">MEET</span>
-          </div>
+          </Link>
           <nav className="hidden md:flex gap-6">
             <Link href="#services" className="text-sm font-medium transition-colors hover:text-primary">
               Services
@@ -45,7 +45,7 @@ export default function LandingPage() {
           </nav>
           <div className="flex items-center gap-4">
             <Button asChild>
-              <Link href="/rental">Rent Equipment</Link>
+              <Link href="/">Rent Equipment</Link>
             </Button>
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function LandingPage() {
                 variant="outline"
                 className="bg-white/10 text-white border-white/20 hover:bg-white/20 text-base"
               >
-                <Link href="/rental">Rent Equipment</Link>
+                <Link href="/">Rent Equipment</Link>
               </Button>
             </div>
           </div>
@@ -525,7 +525,7 @@ export default function LandingPage() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button size="lg" variant="secondary" asChild>
-                <Link href="/rental">Rent Equipment</Link>
+                <Link href="/">Rent Equipment</Link>
               </Button>
               <Button
                 size="lg"
@@ -533,7 +533,7 @@ export default function LandingPage() {
                 className="bg-transparent border-primary-foreground/20 hover:bg-primary-foreground/10"
                 asChild
               >
-                <Link href="/rental">Browse Equipment</Link>
+                <Link href="/">Browse Equipment</Link>
               </Button>
             </div>
           </div>

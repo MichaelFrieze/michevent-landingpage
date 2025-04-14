@@ -1,67 +1,53 @@
-import Link from "next/link"
-import { Monitor, Phone, Mail, MapPin } from "lucide-react"
-import { ThemeToggle } from "@/components/theme-toggle"
+import Link from "next/link";
+import { Monitor } from "lucide-react";
+import { ModeToggle } from "@/components/theme-toggle";
 
-export default function RentalFooter() {
+export default function LandingFooter() {
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
+    <footer className="bg-muted py-12">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <Monitor className="h-6 w-6 text-primary-foreground" />
-              <span className="text-xl font-bold tracking-tight">MEET Rentals</span>
+              <Monitor className="h-6 w-6 text-primary" />
+              <span className="text-xl font-bold tracking-tight">MEET</span>
             </div>
-            <p className="text-sm text-primary-foreground/80">
-              Michigan Entertainment Event Technologies provides professional audio-visual equipment rentals for events
-              of all sizes.
+            <p className="text-sm text-muted-foreground">
+              Michigan Entertainment Event Technologies provides professional
+              audio-visual equipment rentals for events of all sizes.
             </p>
-            <div className="space-y-2">
-              <div className="flex items-center gap-2 text-sm">
-                <Phone className="h-4 w-4 text-primary-foreground/80" />
-                <span>(555) 123-4567</span>
-              </div>
-              <div className="flex items-center gap-2 text-sm">
-                <Mail className="h-4 w-4 text-primary-foreground/80" />
-                <span>info@michiganeet.com</span>
-              </div>
-              <div className="flex items-center gap-2 text-sm">
-                <MapPin className="h-4 w-4 text-primary-foreground/80" />
-                <span>123 Tech Avenue, Grand Rapids, MI 49503</span>
-              </div>
-            </div>
           </div>
           <div>
-            <h3 className="font-bold mb-4">Equipment</h3>
+            <h3 className="font-bold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/rental?category=projection"
-                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground"
+                  href="#"
+                  className="text-sm text-muted-foreground hover:text-foreground"
                 >
                   Projection Systems
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/rental?category=audio"
-                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground"
+                  href="#"
+                  className="text-sm text-muted-foreground hover:text-foreground"
                 >
                   Audio Equipment
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/rental?category=video"
-                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground"
+                  href="#"
+                  className="text-sm text-muted-foreground hover:text-foreground"
                 >
                   Video Recording
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/rental?category=lighting"
-                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground"
+                  href="#"
+                  className="text-sm text-muted-foreground hover:text-foreground"
                 >
                   Lighting Solutions
                 </Link>
@@ -69,35 +55,38 @@ export default function RentalFooter() {
             </ul>
           </div>
           <div>
-            <h3 className="font-bold mb-4">Rental Info</h3>
+            <h3 className="font-bold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/rental/how-it-works"
-                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground"
+                  href="#about"
+                  className="text-sm text-muted-foreground hover:text-foreground"
                 >
-                  How It Works
+                  About Us
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/rental/packages"
-                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground"
+                  href="#"
+                  className="text-sm text-muted-foreground hover:text-foreground"
                 >
-                  Rental Packages
-                </Link>
-              </li>
-              <li>
-                <Link href="/rental/faq" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">
-                  FAQ
+                  Our Team
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/rental/support"
-                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground"
+                  href="#"
+                  className="text-sm text-muted-foreground hover:text-foreground"
                 >
-                  Support
+                  Careers
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#contact"
+                  className="text-sm text-muted-foreground hover:text-foreground"
+                >
+                  Contact
                 </Link>
               </li>
             </ul>
@@ -106,40 +95,42 @@ export default function RentalFooter() {
             <h3 className="font-bold mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/terms" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">
+                <Link
+                  href="#"
+                  className="text-sm text-muted-foreground hover:text-foreground"
+                >
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">
+                <Link
+                  href="#"
+                  className="text-sm text-muted-foreground hover:text-foreground"
+                >
                   Privacy Policy
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/rental/agreement"
-                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground"
+                  href="#"
+                  className="text-sm text-muted-foreground hover:text-foreground"
                 >
                   Rental Agreement
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/rental/insurance"
-                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground"
-                >
-                  Insurance & Liability
                 </Link>
               </li>
             </ul>
           </div>
         </div>
-        <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-primary-foreground/80">
-            © {new Date().getFullYear()} Michigan Entertainment Event Technologies. All rights reserved.
+        <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-sm text-muted-foreground">
+            © {new Date().getFullYear()} Michigan Entertainment Event
+            Technologies. All rights reserved.
           </p>
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
-            <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground">
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground"
+            >
               <span className="sr-only">Facebook</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +147,10 @@ export default function RentalFooter() {
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
               </svg>
             </Link>
-            <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground">
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground"
+            >
               <span className="sr-only">Twitter</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -173,7 +167,10 @@ export default function RentalFooter() {
                 <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
               </svg>
             </Link>
-            <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground">
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground"
+            >
               <span className="sr-only">Instagram</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -192,7 +189,10 @@ export default function RentalFooter() {
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
               </svg>
             </Link>
-            <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground">
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground"
+            >
               <span className="sr-only">LinkedIn</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -211,10 +211,10 @@ export default function RentalFooter() {
                 <circle cx="4" cy="4" r="2"></circle>
               </svg>
             </Link>
-            <ThemeToggle />
+            <ModeToggle />
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

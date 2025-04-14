@@ -1,30 +1,35 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Monitor, Menu, ShoppingCart, X } from "lucide-react"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { useState } from "react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Monitor, Menu, ShoppingCart, X } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { useState } from "react";
 
 interface RentalHeaderProps {
-  cartItemCount: number
+  cartItemCount: number;
 }
 
 export default function RentalHeader({ cartItemCount }: RentalHeaderProps) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-primary text-primary-foreground backdrop-blur supports-[backdrop-filter]:bg-primary/90">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
-          <Link href="/rental" className="flex items-center justify-center">
+          <Link href="/" className="flex items-center justify-center">
             <Monitor className="h-6 w-6 text-primary-foreground" />
-            <span className="ml-2 text-xl font-bold tracking-tight">MEET Rentals</span>
+            <span className="ml-2 text-xl font-bold tracking-tight">
+              MEET Rentals
+            </span>
           </Link>
         </div>
 
         <nav className="hidden md:flex gap-6">
-          <Link href="/rental" className="text-sm font-medium transition-colors hover:text-primary-foreground/80">
+          <Link
+            href="/"
+            className="text-sm font-medium transition-colors hover:text-primary-foreground/80"
+          >
             Equipment
           </Link>
           <Link
@@ -39,7 +44,10 @@ export default function RentalHeader({ cartItemCount }: RentalHeaderProps) {
           >
             How It Works
           </Link>
-          <Link href="/rental/faq" className="text-sm font-medium transition-colors hover:text-primary-foreground/80">
+          <Link
+            href="/rental/faq"
+            className="text-sm font-medium transition-colors hover:text-primary-foreground/80"
+          >
             FAQ
           </Link>
           <Link
@@ -74,16 +82,22 @@ export default function RentalHeader({ cartItemCount }: RentalHeaderProps) {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <Monitor className="h-6 w-6 text-primary" />
-                    <span className="text-xl font-bold tracking-tight">MEET Rentals</span>
+                    <span className="text-xl font-bold tracking-tight">
+                      MEET Rentals
+                    </span>
                   </div>
-                  <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)}>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
                     <X className="h-5 w-5" />
                   </Button>
                 </div>
 
                 <nav className="flex flex-col gap-4">
                   <Link
-                    href="/rental"
+                    href="/"
                     className="flex py-2 text-base font-medium transition-colors hover:text-primary"
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -133,6 +147,5 @@ export default function RentalHeader({ cartItemCount }: RentalHeaderProps) {
         </div>
       </div>
     </header>
-  )
+  );
 }
-

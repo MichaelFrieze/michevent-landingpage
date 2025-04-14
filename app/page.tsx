@@ -193,7 +193,7 @@ export default function LandingPage() {
               <div className="bg-background rounded-lg overflow-hidden shadow-sm">
                 <div className="h-64 relative">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/temp-images/IMG_1245.webp"
                     alt="Projection system"
                     fill
                     className="object-cover"
@@ -213,7 +213,7 @@ export default function LandingPage() {
               <div className="bg-background rounded-lg overflow-hidden shadow-sm">
                 <div className="h-64 relative">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/temp-images/IMG_2251.webp"
                     alt="Audio system"
                     fill
                     className="object-cover"
@@ -235,7 +235,7 @@ export default function LandingPage() {
               <div className="bg-background rounded-lg overflow-hidden shadow-sm">
                 <div className="h-64 relative">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/temp-images/IMG_1104.webp"
                     alt="Video recording equipment"
                     fill
                     className="object-cover"
@@ -309,7 +309,7 @@ export default function LandingPage() {
               </div>
               <div className="relative h-[500px] md:h-[600px]">
                 <Image
-                  src="/placeholder.svg?height=600&width=400"
+                  src="/temp-images/rental-screenshot.png"
                   alt="MEET Rental App Preview"
                   fill
                   className="object-contain"

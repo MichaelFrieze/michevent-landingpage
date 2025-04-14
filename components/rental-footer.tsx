@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { Monitor, Phone, Mail, MapPin } from "lucide-react"
-import { ThemeToggle } from "@/components/theme-toggle"
+import Link from "next/link";
+import { Monitor, Phone, Mail, MapPin } from "lucide-react";
+import { ModeToggle } from "@/components/theme-toggle";
 
 export default function RentalFooter() {
   return (
@@ -10,11 +10,13 @@ export default function RentalFooter() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Monitor className="h-6 w-6 text-primary-foreground" />
-              <span className="text-xl font-bold tracking-tight">MEET Rentals</span>
+              <span className="text-xl font-bold tracking-tight">
+                MEET Rentals
+              </span>
             </div>
             <p className="text-sm text-primary-foreground/80">
-              Michigan Entertainment Event Technologies provides professional audio-visual equipment rentals for events
-              of all sizes.
+              Michigan Entertainment Event Technologies provides professional
+              audio-visual equipment rentals for events of all sizes.
             </p>
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm">
@@ -88,7 +90,10 @@ export default function RentalFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="/rental/faq" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">
+                <Link
+                  href="/rental/faq"
+                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground"
+                >
                   FAQ
                 </Link>
               </li>
@@ -106,12 +111,18 @@ export default function RentalFooter() {
             <h3 className="font-bold mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/terms" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">
+                <Link
+                  href="/terms"
+                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground"
+                >
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">
+                <Link
+                  href="/privacy"
+                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground"
+                >
                   Privacy Policy
                 </Link>
               </li>
@@ -136,10 +147,14 @@ export default function RentalFooter() {
         </div>
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-primary-foreground/80">
-            © {new Date().getFullYear()} Michigan Entertainment Event Technologies. All rights reserved.
+            © {new Date().getFullYear()} Michigan Entertainment Event
+            Technologies. All rights reserved.
           </p>
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
-            <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground">
+            <Link
+              href="#"
+              className="text-primary-foreground/80 hover:text-primary-foreground"
+            >
               <span className="sr-only">Facebook</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +171,10 @@ export default function RentalFooter() {
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
               </svg>
             </Link>
-            <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground">
+            <Link
+              href="#"
+              className="text-primary-foreground/80 hover:text-primary-foreground"
+            >
               <span className="sr-only">Twitter</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -173,7 +191,10 @@ export default function RentalFooter() {
                 <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
               </svg>
             </Link>
-            <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground">
+            <Link
+              href="#"
+              className="text-primary-foreground/80 hover:text-primary-foreground"
+            >
               <span className="sr-only">Instagram</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -192,7 +213,10 @@ export default function RentalFooter() {
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
               </svg>
             </Link>
-            <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground">
+            <Link
+              href="#"
+              className="text-primary-foreground/80 hover:text-primary-foreground"
+            >
               <span className="sr-only">LinkedIn</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -211,10 +235,10 @@ export default function RentalFooter() {
                 <circle cx="4" cy="4" r="2"></circle>
               </svg>
             </Link>
-            <ThemeToggle />
+            <ModeToggle />
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
